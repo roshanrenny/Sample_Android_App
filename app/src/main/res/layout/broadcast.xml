@@ -1,0 +1,48 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context=".broadcast.BroadcastFragment"
+    android:background="#91C357">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcometobroadcast"
+        android:layout_marginTop="@dimen/_20dp"
+        android:gravity="center"
+        android:textSize="@dimen/_30sp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/message_input"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_100dp"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_height="@dimen/_80dp"
+        android:hint="@string/enter_your_message"
+        android:textSize="@dimen/_20sp"
+        android:autofillHints="text"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="@dimen/_150dp"
+        android:textSize="@dimen/_18sp"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_100dp"
+        android:layout_marginTop="@dimen/_50dp"
+        android:layout_height="@dimen/_60dp"
+        android:text="@string/send"/>
+
+    </LinearLayout>
+
+</ScrollView>

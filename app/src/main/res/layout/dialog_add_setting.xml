@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/add_information"
+            android:textStyle="bold"
+            android:textSize="@dimen/_19sp"
+            android:textColor="#E60B0B"
+            android:padding="@dimen/_10dp"
+            android:elevation="@dimen/_15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:hint="@string/Title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_corner"
+            android:padding="@dimen/_15dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:autofillHints="title"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_65dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:layout_marginBottom="@dimen/_15dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/Description"
+            android:inputType="text"
+            android:autofillHints="description"
+            android:padding="@dimen/_15dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

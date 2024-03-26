@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activity.ApiActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="@dimen/_16dp"
+        android:rowCount="2"
+        android:rowOrderPreserved="false">
+
+        <Button
+            android:id="@+id/btnGetData"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_row="0"
+            android:textSize="@dimen/_18sp"
+            android:layout_column="0"
+            android:layout_marginEnd="@dimen/_30dp"
+            android:text="@string/get_data"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnPostData"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_row="0"
+            android:textSize="@dimen/_18sp"
+            android:layout_column="1"
+            android:text="@string/post_data"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnUpdateData"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:layout_row="1"
+            android:textSize="@dimen/_18sp"
+            android:layout_column="0"
+            android:text="@string/update_data"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnDeleteData"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_row="1"
+            android:textSize="@dimen/_18sp"
+            android:layout_column="1"
+            android:layout_marginTop="@dimen/_15dp"
+            android:text="@string/delete_data"
+            android:textColor="@color/white" />
+    </GridLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_150dp">
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="bold" />
+    </androidx.core.widget.NestedScrollView>
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginTop="@dimen/_200dp"
+        android:hint="@string/enter_id"
+        android:textSize="@dimen/_14sp"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTextUserId"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginTop="@dimen/_240dp"
+        android:hint="@string/enter_user_id"
+        android:textSize="@dimen/_14sp"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edittextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginTop="@dimen/_280dp"
+        android:hint="@string/enter_title"
+        android:textSize="@dimen/_14sp"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTextBody"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/_14sp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginTop="@dimen/_330dp"
+        android:hint="@string/enter_body"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="@dimen/_60dp"
+        android:textSize="@dimen/_16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_400dp"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+    </FrameLayout>
+</ScrollView>

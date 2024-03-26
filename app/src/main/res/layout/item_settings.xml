@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_5dp"
+    android:layout_marginRight="@dimen/_5dp"
+    android:layout_marginTop="@dimen/_5dp"
+    card_view:cardCornerRadius="@dimen/_5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_7dp"
+                android:text="@string/Title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:textStyle="italic"
+                android:text="@string/Description"
+                android:textColor="#6A0225"
+                android:textSize="@dimen/_16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivRowDelete"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_margin="@dimen/_7dp"
+                android:src="@drawable/ic_delete"
+                card_view:tint="#F60303"
+                android:contentDescription="@string/delete" />
+
+            <ImageView
+                android:id="@+id/ivRowEdit"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_margin="@dimen/_7dp"
+                android:src="@drawable/ic_edit"
+                card_view:tint="#0428F3"
+                android:contentDescription="@string/edit" />
+
+            <ImageView
+                android:id="@+id/ivRowAdd"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_margin="@dimen/_7dp"
+                android:src="@drawable/ic_add"
+                card_view:tint="#06EF0F"
+                android:contentDescription="@string/add"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

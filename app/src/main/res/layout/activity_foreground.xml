@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activity.ForegroundActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/foreground_service"
+        android:gravity="center"
+        android:textSize="@dimen/_24sp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:layout_marginTop="@dimen/_110dp"
+        android:id="@+id/button_start_music"
+        android:layout_marginStart="@dimen/_100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_music" />
+
+    <Button
+        android:id="@+id/button_stop_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Stop_music"
+        android:layout_marginStart="@dimen/_100dp"
+        android:layout_below="@id/button_start_music"
+        android:layout_marginTop="@dimen/_100dp"/>
+
+
+</RelativeLayout>
