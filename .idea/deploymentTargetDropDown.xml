@@ -2,6 +2,28 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="Login">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\roshan.renny\.android\avd\Small_Phone_API_31.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-03-27T05:15:22.288185Z" />
+        </State>
+      </entry>
+      <entry key="Registration">
+        <State />
+      </entry>
+      <entry key="Registration (1)">
+        <State />
+      </entry>
       <entry key="app">
         <State />
       </entry>
