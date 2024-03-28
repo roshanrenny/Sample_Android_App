@@ -55,5 +55,8 @@
     <dimen name="_95dp">95dp</dimen>
     <dimen name="_120dp">120dp</dimen>
     <dimen name="_12sp">12sp</dimen>
+    <dimen name="_243dp">243dp</dimen>
+    <dimen name="_340dp">340dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
 
 </resources>

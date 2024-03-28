@@ -1,9 +1,11 @@
 package com.example.sampleandroidapp.activity
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.sampleandroidapp.roomdb_signups.AppDatabase
@@ -26,6 +28,13 @@ class RegistrationActivity : AppCompatActivity() {
 
         db = AppDatabase.getDatabase(applicationContext)
 
+        binding.hoverusername.setOnClickListener {
+            showAlertDialog("Username requirement", "Username must start with an uppercase letter contain at least one digit and be at least 8 characters long : Example - Roshan23")
+        }
+        binding.hoverpassword.setOnClickListener {
+            showAlertDialog("Password requirement","Password must contain at least one uppercase letter one digit one special character and be at least 8 characters long : Example - Roshan@123")
+        }
+
         binding.signupBtn.setOnClickListener {
             val username = binding.usernameInput.text.toString()
             val password = binding.passswordInput.text.toString()
@@ -37,6 +46,7 @@ class RegistrationActivity : AppCompatActivity() {
                 showToast("Enter username or password as per requirements")
             }
         }
+
 
         binding.Facebookbutton.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/login"))
@@ -98,4 +108,15 @@ class RegistrationActivity : AppCompatActivity() {
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
+    private fun showAlertDialog(title: String, message: String) {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(title)
+        builder.setMessage(message)
+        builder.setPositiveButton("OK") { dialogInterface: DialogInterface, _: Int ->
+            dialogInterface.dismiss()
+        }
+        val dialog = builder.create()
+        dialog.show()
+    }
+
 }

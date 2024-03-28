@@ -57,7 +57,7 @@
             android:layout_marginStart="@dimen/_50dp"
             android:layout_marginEnd="@dimen/_50dp"
             android:background="@drawable/rounded_corner"
-            android:drawableStart="@drawable/password_icon"
+            android:drawableStart="@drawable/lock"
             android:hint="@string/enter_password"
             android:textColor="#FFEB3B"
             android:textColorHint="#FFEB3B"

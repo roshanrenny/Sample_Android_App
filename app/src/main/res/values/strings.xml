@@ -115,6 +115,7 @@
     <string name="Name">Name</string>
     <string name="device_notification_using_firebase">Device Notification using Firebase</string>
     <string name="Service">Service</string>
+    <string name="help">help box</string>
 
 
 </resources>
