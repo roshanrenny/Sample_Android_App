@@ -14,6 +14,7 @@ import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import androidx.core.app.RemoteInput
 import com.example.sampleandroidapp.R
+import com.example.sampleandroidapp.activity.NotificationActivity
 import com.example.sampleandroidapp.activity.NotificationReceiver
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
@@ -41,9 +42,11 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         val replyIntent = Intent(this, NotificationReceiver::class.java)
         replyIntent.action = REPLY_ACTION
 
+
         val context = applicationContext
         val replyPendingIntent = if (context != null) {
             PendingIntent.getBroadcast(context, 0, replyIntent, PendingIntent.FLAG_MUTABLE)
+            PendingIntent.getActivity(this, 0, replyIntent, PendingIntent.FLAG_IMMUTABLE)
         } else {
             null
         }
