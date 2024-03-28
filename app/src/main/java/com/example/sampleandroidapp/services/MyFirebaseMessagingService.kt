@@ -46,7 +46,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         val context = applicationContext
         val replyPendingIntent = if (context != null) {
             PendingIntent.getBroadcast(context, 0, replyIntent, PendingIntent.FLAG_MUTABLE)
-            PendingIntent.getActivity(this, 0, replyIntent, PendingIntent.FLAG_IMMUTABLE)
+            PendingIntent.getActivity(this, 0, replyIntent, PendingIntent.FLAG_MUTABLE)
         } else {
             null
         }
